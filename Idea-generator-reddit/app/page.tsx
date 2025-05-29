@@ -49,7 +49,6 @@ export default function Home() {
           onSubmit={handleSubmit}
           loading={loading}
           apiKey={apiKey}
-          onOpenSidebar={() => setShowSidebar(true)}
         />
 
         <ProgressBar progress={progress} loading={loading} />

@@ -8,7 +8,6 @@ interface HeroSectionProps {
   onSubmit: () => void;
   loading: boolean;
   apiKey: string;
-  onOpenSidebar: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -16,8 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   onNicheChange,
   onSubmit,
   loading,
-  apiKey,
-  onOpenSidebar
+  apiKey
 }) => {
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {

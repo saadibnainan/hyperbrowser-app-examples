@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const createErrorResponse = (message: string, status: number = 400, debug?: any) => {
+export const createErrorResponse = (message: string, status: number = 400, debug?: unknown) => {
   return NextResponse.json({ 
     error: message,
     debug,
