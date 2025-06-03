@@ -2,19 +2,23 @@
 
 Transform any website content into engaging podcasts using AI. This application uses Hyperbrowser for intelligent web scraping, OpenAI for script generation, and ElevenLabs for realistic voice synthesis.
 
+**Get your Hyperbrowser API keys at [hyperbrowser.ai](https://hyperbrowser.ai)**
+
 ## Features
 
 - **Intelligent Content Extraction**: Uses Hyperbrowser to extract relevant content from news articles, blog posts, and changelogs
 - **AI Script Generation**: Converts extracted content into engaging podcast scripts with OpenAI
 - **Realistic Voice Synthesis**: Generates high-quality audio using ElevenLabs TTS
 - **Professional Interface**: Clean, modern UI with audio playback and download capabilities
+- **Simple Setup**: Only requires one API key from the user interface
 
 ## Demo
 
-1. Enter any URL containing news, articles, or changelog content
-2. Watch as the AI extracts, processes, and converts content into a podcast
-3. Listen to the generated podcast with the built-in player
-4. Download the audio file for offline listening
+1. Enter your Hyperbrowser API key in the sidebar (get yours at [hyperbrowser.ai](https://hyperbrowser.ai))
+2. Enter any URL containing news, articles, or changelog content
+3. Watch as the AI extracts, processes, and converts content into a podcast
+4. Listen to the generated podcast with the built-in player
+5. Download the audio file for offline listening
 
 ## Setup
 
@@ -22,9 +26,9 @@ Transform any website content into engaging podcasts using AI. This application 
 
 - Node.js 18+ 
 - API keys for:
-  - [Hyperbrowser](https://hyperbrowser.ai/) - For web content extraction
-  - [OpenAI](https://platform.openai.com/) - For script generation  
-  - [ElevenLabs](https://elevenlabs.io/) - For voice synthesis
+  - **[Hyperbrowser](https://hyperbrowser.ai/)** - For web content extraction (entered via UI)
+  - [OpenAI](https://platform.openai.com/) - For script generation (environment variable)
+  - [ElevenLabs](https://elevenlabs.io/) - For voice synthesis (environment variable)
 
 ### Installation
 
@@ -39,19 +43,13 @@ cd podcast-generator-ai
 npm install
 ```
 
-3. Create a `.env.local` file with your API keys:
+3. Create a `.env.local` file with your server API keys:
 ```env
-# Hyperbrowser API Key
-HYPERBROWSER_API_KEY=your_hyperbrowser_api_key_here
-
 # OpenAI API Key  
 OPENAI_API_KEY=your_openai_api_key_here
 
 # ElevenLabs API Key
 ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
-
-# ElevenLabs Voice ID (Optional - defaults to Adam voice)
-ELEVENLABS_VOICE_ID=pNInz6obpgDQGcFmaJgB
 ```
 
 4. Run the development server:
@@ -60,6 +58,8 @@ npm run dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+6. **Get your Hyperbrowser API key at [hyperbrowser.ai](https://hyperbrowser.ai)** and enter it in the sidebar
 
 ## How It Works
 
@@ -86,7 +86,7 @@ npm run dev
 
 ## Technologies
 
-- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS, Hubot Sans
 - **Backend**: Next.js API Routes
 - **Web Scraping**: Hyperbrowser SDK
 - **AI/ML**: OpenAI GPT-4
