@@ -8,7 +8,7 @@ Transform any documentation website into high-quality Q/A datasets ready for LLM
 ## ✨ Features
 
 - **🌐 Smart Web Scraping**: Extract meaningful content from any documentation site using Hyperbrowser's official API
-- **🤖 AI-Powered Generation**: Create natural Q/A pairs optimized for language model training with GPT-4o-mini
+- **🤖 AI-Powered Generation**: Create natural Q/A pairs optimized for language model training with GEMINI
 - **📊 Real-time Processing**: Live console output and progress tracking during dataset generation
 - **📁 Export Ready**: Download in both JSONL (recommended) and JSON formats
 - **🎨 Clean Interface**: Minimal, black-and-white design focused on functionality
@@ -20,7 +20,7 @@ Transform any documentation website into high-quality Q/A datasets ready for LLM
 
 - Node.js 18+ and npm
 - **Get an API key**: Visit [hyperbrowser.ai](https://hyperbrowser.ai) to sign up and obtain your API key
-- OpenAI API key for Q/A generation
+- GEMINI_API_KEY for Q/A generation
 
 ### Installation
 
@@ -39,7 +39,7 @@ npm install
 Create a `.env.local` file in the root directory:
 ```env
 HYPERBROWSER_API_KEY=your_hyperbrowser_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 4. Run the development server:
@@ -53,7 +53,7 @@ npm run dev
 
 1. **Input URL**: Enter any documentation or blog URL
 2. **Smart Extraction**: Hyperbrowser scrapes and processes the content
-3. **AI Processing**: GPT-4o-mini generates high-quality Q/A pairs from content chunks
+3. **AI Processing**: gemini generates high-quality Q/A pairs from content chunks
 4. **Live Monitoring**: Watch real-time progress in the console
 5. **Export**: Download your dataset in JSONL or JSON format
 
@@ -69,7 +69,7 @@ npm run dev
 - **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS
 - **Animation**: Framer Motion for smooth interactions
 - **Web Scraping**: [@hyperbrowser/sdk](https://hyperbrowser.ai) - Official Hyperbrowser SDK
-- **AI Processing**: OpenAI GPT-4o-mini for Q/A generation
+- **AI Processing**: Gemini 2.5 for Q/A generation
 - **Content Processing**: Cheerio for HTML parsing
 
 ## 📋 API Endpoints
@@ -102,7 +102,7 @@ Generate Q/A dataset from a URL.
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `HYPERBROWSER_API_KEY` | Your Hyperbrowser API key | ✅ |
-| `OPENAI_API_KEY` | Your OpenAI API key | ✅ |
+| `GEMINI_API_KEY` | Your Gemini API key | ✅ |
 
 ### Customization
 
@@ -191,7 +191,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **[Hyperbrowser](https://hyperbrowser.ai)** - For powerful web scraping capabilities
-- **OpenAI** - For advanced language model processing
+- **Gemini** - For advanced language model processing
 - **Next.js Team** - For the excellent React framework
 - **Vercel** - For seamless deployment platform
 
