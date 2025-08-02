@@ -26,8 +26,8 @@ Transform any documentation website into high-quality Q/A datasets ready for LLM
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hyperbrowserai/hyperbrowser-app-examples
-cd site-to-dataset
+git clone https://github.com/saadibnainan/hyperbrowser-app-examples.git
+cd hyperbrowser-app-examples/site-to-dataset
 ```
 
 2. Install dependencies:
